@@ -22,7 +22,7 @@ A Script for creating kubernetes cluster up and running in AWS through Kops.
 The easiest way to get started is to clone the repository:
 
 # Get the latest snapshot
-git clone https://github.com/kaza515/kubernetesinstallation.git myproject
+git clone https://github.com/kaza514/kops_installation.git myproject
 
 # Change directory
 cd myproject
