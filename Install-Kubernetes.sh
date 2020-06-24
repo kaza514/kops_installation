@@ -9,7 +9,7 @@ KUBE_CONFIG_HOME=$KOPS_HOME/$SUBDOMAIN_NAME/kubeconfig
 HOSTED_ZONE_FILE=$KOPS_HOME/hosted-zone.json
 K8_SUB_DOMAIN_DEFAULT=$KOPS_HOME/k8-sub-domain-default.json
 K8_SUB_DOMAIN_ENV=$KOPS_HOME/k8-sub-domain.json
-SSH_KEY_HOME=$KOPS_HOME/$SUBDOMAIN_NAME/sshkeys
+SSH_KEY_HOME=$KOPS_HOME/$SUBDOMAIN_NAME
 
 installAWSClient() {
 	# update repository
@@ -131,8 +131,8 @@ createCluster() {
 		--cloud=aws \
 		--node-count 2 \
 		--master-size=t2.medium \
-		--master-zones=us-east-1a \
-		--zones us-east-1a,us-east-1b \
+		--master-zones=ap-south-1a \
+		--zones ap-south-1a,ap-south-1b \
 		--name=$SUBDOMAIN_NAME \
 		--node-size=m3.xlarge \
 		--ssh-public-key=$SSH_PUBLIC_KEY \
