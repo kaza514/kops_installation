@@ -48,7 +48,7 @@ installKops() {
 createS3Bucket() {
 	echo "######### Creating S3 Bucket $SUBDOMAIN_NAME ######"
 	aws s3 rb s3://$SUBDOMAIN_NAME-kubernetes-state
-	aws s3 mb s3://$SUBDOMAIN_NAME-kubernetes-state --region us-east-1
+	aws s3 mb s3://$SUBDOMAIN_NAME-kubernetes-state --region ap-south-1
 	echo "######### export KOPS_STATE_STORE ######"
 	export KOPS_STATE_STORE=s3://$SUBDOMAIN_NAME-kubernetes-state
 	echo "#########  S3 Bucket Creation Complete ######"
