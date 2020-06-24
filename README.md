@@ -23,7 +23,7 @@ The easiest way to get started is to clone the repository:
 
 ```
 # Get the latest snapshot
-git clone https://github.com/kaza515/kubernetesinstallation.git myproject
+git clone https://github.com/kaza515/kops_installation.git myproject
 
 # Change directory
 cd myproject
