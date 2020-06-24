@@ -235,9 +235,9 @@ case $choice in
 		;;
 	5)
 		echo "#########################"
-		echo "Creating Cluster."
+		echo "Deleting Cluster."
 		getSubDomain
-		createCluster
+		deleteCluster
 		echo "#########################"
 		;;
 	*)
