@@ -24,7 +24,7 @@
     chmod +x kops-linux-amd64
     sudo mv kops-linux-amd64 /usr/local/bin/kops
     ```
-1. Create an IAM user/role  with Route53, EC2, IAM and S3 full access
+1. Create an IAM user/role  with Route53, EC2, IAM and S3 full access (or) Add Administrator access polocy to this role 
 
 1. Attach IAM role to Linux instance
    ```sh
@@ -71,7 +71,7 @@
 
 1. Create kubernetes cluser
     ```sh
-    kops update cluster demo.k8s.manojy.co.in --yes
+    kops update cluster --name demo.k8s.manojy.co.in --yes --admin
     ```
 
         Suggestions:
