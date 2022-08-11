@@ -71,7 +71,7 @@
 
 1. Create kubernetes cluser
     ```sh
-    kops update cluster demo.k8s.manojy.co.in --yes
+    kops update cluster demo.k8s.manojy.co.in --admin --yes
     ```
 
         Suggestions:
