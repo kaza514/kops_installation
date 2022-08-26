@@ -396,7 +396,7 @@ kk logs -f dep1-5c9699ff4b-cblbv -n dev
 
 ## Create Secrets yaml file for secret type Volume #####
 kubectl create secret generic secret-name --from-literal==username=username --from-literal=password=1234 -n namespacename --dry-run=client -o yaml > secretfile.yaml
-Ex: kk create secret generic sec1  --from-literal=username=saddam --from-literal=password=1234 -n dev --dry-run=client -o yaml > sec1.yaml
+Ex: kk create secret generic sec1  --from-literal=username=kaza514 --from-literal=password=1234 -n dev --dry-run=client -o yaml > sec1.yaml
 
 ### How to decretpt secret
 echo "secretvalue" | base64 -d
