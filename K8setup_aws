@@ -69,6 +69,11 @@
 
    kops create cluster --cloud=aws --master-zones=ap-south-1a,ap-south-1b,ap-south-1c --zones=ap-south-1a,ap-south-1b,ap-south-1c --node-count=2 --node-size=t2.micro --master-size=t2.micro --name=demo.manojy.co.in --state=s3://demo.manojy.co.in --dns-zone=manojy.co.in --dns private
 
+   or
+   
+   kops create cluster --cloud=aws --zones=us-east-1a --name=demo.k8s.kaspirants.co.in --dns-zone=Z08922313F2UPE61OPLV3  --dns=private  --vpc=vpc-0ffd4f7e545a756c1   --subnets=subnet-08901d8d718925295
+
+
 1. Create kubernetes cluser
     ```sh
     kops update cluster demo.k8s.manojy.co.in --admin --yes
